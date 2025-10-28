@@ -1,0 +1,95 @@
+:root {
+  /* ========================================================================= */
+  /* 1. COLORS */
+  /* ========================================================================= */
+
+  /* Primary & Background */
+  --color-primary: #2c50ff;
+  --color-background: #f5fcff;
+
+  /* Secondary & Neutral Tones */
+  --color-gray: #757582;
+  --color-gray-light: #b5b5c4;
+  --color-gray-dark: #1e1e21;
+
+  /* Component States */
+  --color-active: var(--color-primary); /* 네브바 Active 색상 */
+  --color-disabled: #757582; /* 네브바 Disabled 색상 */
+
+  /* ========================================================================= */
+  /* 2. TYPOGRAPHY */
+  /* ========================================================================= */
+
+  /* 폰트 패밀리 */
+  --font-family-pretendard: "Pretendard", sans-serif;
+  --font-family-caveat: "Caveat", cursive;
+  --font-family-paperozi: "Paperozi", sans-serif;
+
+  /* 폰트 두께 */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* ========================================================================= */
+  /* 3. TYPOGRAPHY TOKENS */
+  /* ========================================================================= */
+
+  /* --- Pretendard (메인 폰트) --- */
+
+  /* Headline (매우 큰 제목) */
+  --font-size-h1: 185px;
+  --font-weight-h1: var(--font-weight-extrabold);
+  --font-family-h1: var(--font-family-pretendard);
+
+  --font-size-h2: 120px;
+  --font-weight-h2: var(--font-weight-semibold);
+  --font-family-h2: var(--font-family-pretendard);
+
+  --font-size-h3: 80px;
+  --font-weight-h3: var(--font-weight-bold); /* SemiBold(600)로 보이지만 Bold(700)가 더 일반적 */
+  --font-family-h3: var(--font-family-pretendard);
+
+  /* Subtitle & Body */
+  --font-size-subtitle: 40px;
+  --font-weight-subtitle: var(--font-weight-semibold);
+
+  --font-size-body1: 30px; /* 본문 내용 */
+  --font-weight-body1: var(--font-weight-regular);
+
+  /* --font-size-body2: 25px;
+  --font-weight-body2: var(--font-weight-regular); */
+
+  /* Button & Caption */
+  --font-size-button: 35px;
+  --font-weight-button: var(--font-weight-regular);
+
+  --font-size-caption1: 30px; /* home 프로젝트 번호 */
+  --font-weight-caption1: var(--font-weight-medium);
+
+  --font-size-caption2: 20px; /* 하단 텍스트 */
+  --font-weight-caption2: var(--font-weight-regular);
+
+  /* --- Caveat (로고 폰트) --- */
+
+  --font-size-logo1: 180px;
+  --font-size-logo2: 150px;
+  --font-size-logo3: 130px;
+  --font-size-logo4: 50px;
+  --font-weight-logo: var(--font-weight-bold);
+  --font-family-logo: var(--font-family-caveat);
+
+  /* --- Paper (버튼 폰트) --- */
+
+  --font-size-paper: 35px;
+  --font-weight-paper: var(--font-weight-regular);
+
+  /* ========================================================================= */
+  /* 4. COMPONENT STYLES */
+  /* ========================================================================= */
+
+  /* 버튼 (Button) */
+  --button-size-about-me: 190px; /* About me 버튼의 지름/크기 (120px 추정) */
+  --button-border-width: 1px;
+}
