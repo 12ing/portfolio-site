@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, useLocation } from "react-router-dom"
 import "./Header.css"
+import Rogo4 from "../assets/Rogo4.svg"
 
 function Header() {
   const location = useLocation()
@@ -8,7 +9,9 @@ function Header() {
   return (
     <header className="header">
       <div className="header__logo">
-        <Link to="/">alreay Lim</Link>
+        <Link to="/">
+          <img src={Rogo4} alt="Rim Rogo" className="Rogo4" />
+        </Link>
       </div>
 
       <nav className="header__nav">

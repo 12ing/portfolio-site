@@ -8,8 +8,6 @@ import AboutMe from "./pages/AboutMe"
 import Projects from "./pages/Projects"
 import Contact from "./pages/Contact"
 
-import "./styles/layout.css" // 레이아웃 CSS 추가
-
 function App() {
   return (
     <div className="app-wrapper">
