@@ -1,0 +1,41 @@
+.page-container h1 {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-h2);
+  margin: auto 0;
+  color: var(--color-background);
+}
+
+.page-container {
+  line-height: 1;
+  /* background-color: var(--color-gray-dark); */
+  /* font-size: 120px;
+  font-weight: 900; */
+  /* font-family: caveat; */
+}
+
+#hero-section {
+  background-color: var(--color-gray-dark);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.Rogo1 {
+  height: 200px;
+  /* vertical-align: text-bottom; */
+  vertical-align: -60px;
+}
+
+.ArrowDown {
+  height: 120px;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#AboutMe{
+      height: 100vh;
+}
