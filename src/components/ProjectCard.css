@@ -1,10 +1,10 @@
 .project-card {
-  width: 100%;
+  min-width: 100vw;
+  width: 100vw;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  /* color: white; */
   flex-shrink: 0;
   position: relative;
 }
@@ -16,32 +16,36 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* gap: 80px; */
   box-sizing: border-box;
 }
-
-/* 왼쪽 콘텐츠 영역 */
-
+/* ===================================== */
+/* 왼쪽 콘텐츠 */
+/* ===================================== */
 .project-card-content {
   justify-content: flex-start;
   text-align: left;
   flex: 1;
   display: flex;
   flex-direction: column;
-  margin-bottom: 120px;
-  /* gap: 30px; */
-  /* max-width: 600px; */
+  margin-bottom: 250px;
 }
 
 .project-card-header {
   margin-bottom: 40px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.project-card-header.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .project-card-number {
   font-size: var(--font-size-caption1);
   font-weight: var(--font-weight-caption1);
   color: var(--color-gray);
-  /* margin-bottom: 10px; */
 }
 
 .project-card-title {
@@ -61,6 +65,14 @@
   flex-direction: column;
   gap: 12px;
   margin-top: 20px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.project-card-description.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .project-card-description p {
@@ -68,8 +80,9 @@
   line-height: 1.2;
   word-break: keep-all;
 }
-
-/* 오른쪽 이미지 영역 */
+/* ===================================== */
+/* 오른쪽 콘텐츠*/
+/* ===================================== */
 .project-card-image {
   flex: 1;
   display: flex;
@@ -78,19 +91,39 @@
   justify-content: flex-end;
   gap: 30px;
   margin-top: 150px;
-  /* max-width: 600px; */
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.project-card-image.visible {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .project-card-image img {
   width: 400px;
   height: 600px;
   border: 3px solid var(--color-gray-light);
-  /* width: 100%; */
-  /* height: auto; */
-  /* max-height: 300px; */
   object-fit: contain;
   border-radius: 16px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.project-card-image-placeholder {
+  width: 400px;
+  height: 600px;
+  background: rgba(200, 200, 200, 0.3);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px dashed var(--color-gray-light);
+}
+
+.project-card-image-placeholder span {
+  font-size: 18px;
+  color: var(--color-gray);
 }
 
 .projects-button-wrapper {
@@ -98,105 +131,32 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: 60px;
-}
-/* .project-card-image-placeholder {
-  width: 100%;
-  height: 500px;
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 3px dashed rgba(255, 255, 255, 0.4);
+  opacity: 0;
+  transition: opacity 0.8s ease;
 }
 
-.project-card-image-placeholder span {
-  font-size: 20px;
-  opacity: 0.7;
-} */
+.projects-button-wrapper.visible {
+  opacity: 1;
+}
 
-/* 반응형 디자인 */
-/* @media (max-width: 1200px) {
+/* @media (max-width: 768px) {
   .project-card-container {
-    padding: 0 60px;
-    gap: 60px;
-  }
-
-  .project-card-title {
-    font-size: 48px;
-  }
-
-  .project-card-description p {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .project-card-description {
     flex-direction: column;
-    justify-content: center;
-    padding: 60px 40px;
-    gap: 40px;
+    padding: 40px 20px;
   }
 
   .project-card-content {
-    max-width: 100%;
-    text-align: center;
-    align-items: center;
-  }
-
-  .project-card-title {
-    font-size: 40px;
+    margin-bottom: 40px;
   }
 
   .project-card-image {
-    max-width: 500px;
-  }
-}
-
-@media (max-width: 768px) {
-  .project-card-container {
-    padding: 40px 30px;
-    gap: 30px;
+    margin-top: 0;
+    align-items: center;
   }
 
-  .project-card__number {
-    font-size: 24px;
-  }
-
-  .project-card__title {
-    font-size: 32px;
-  }
-
-  .project-card__description p {
-    font-size: 14px;
-  }
-
-  .project-card__detail-btn {
-    padding: 14px 40px;
-    font-size: 18px;
-  }
-
-  .project-card__image-placeholder {
-    height: 350px;
-  }
-}
-
-@media (max-width: 480px) {
-  .project-card__container {
-    padding: 30px 20px;
-  }
-
-  .project-card__title {
-    font-size: 28px;
-  }
-
-  .project-card__description p {
-    font-size: 13px;
-  }
-
-  .project-card__detail-btn {
-    padding: 12px 35px;
-    font-size: 16px;
+  .project-card-image img,
+  .project-card-image-placeholder {
+    width: 300px;
+    height: 450px;
   }
 } */

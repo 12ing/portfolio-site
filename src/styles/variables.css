@@ -47,7 +47,7 @@
   --font-weight-h2: var(--font-weight-semibold);
   --font-family-h2: var(--font-family-pretendard);
 
-  --font-size-h3: 80px;
+  --font-size-h3: 70px;
   --font-weight-h3: var(--font-weight-bold); /* SemiBold(600)로 보이지만 Bold(700)가 더 일반적 */
   --font-family-h3: var(--font-family-pretendard);
 
