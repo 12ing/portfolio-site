@@ -39,7 +39,7 @@
   /* --- Pretendard (메인 폰트) --- */
 
   /* Headline (매우 큰 제목) */
-  --font-size-h1: 120px;
+  --font-size-h1: 183px;
   --font-weight-h1: var(--font-weight-extrabold);
   --font-family-h1: var(--font-family-pretendard);
 
@@ -68,13 +68,13 @@
   --font-size-caption1: 30px; /* home 프로젝트 번호 */
   --font-weight-caption1: var(--font-weight-medium);
 
-  --font-size-caption2: 16px; /* 하단 텍스트 */
+  --font-size-caption2: 15px; /* 하단 텍스트 */
   --font-weight-caption2: var(--font-weight-regular);
 
   /* --- Caveat (로고 폰트) --- */
 
   --font-size-logo1: 180px;
-  --font-size-logo2: 150px;
+  --font-size-logo2: 100px;
   --font-size-logo3: 130px;
   --font-size-logo4: 30px;
   --font-weight-logo: var(--font-weight-bold);

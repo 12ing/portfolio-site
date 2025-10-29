@@ -37,6 +37,7 @@ function Home() {
 
   return (
     <div className="page-container">
+      {/* Hero 화면 */}
       <div id="hero-section" className="page-container">
         <h1>
           I'm ready.
@@ -44,12 +45,13 @@ function Home() {
           <span>
             Already
             <span className="space">&nbsp;</span>
-            <img src={Rogo1} alt="Rim Rogo" className="Rogo1" />
+            <img src={Rogo1} alt="Rim" className="Rogo1" />
           </span>
         </h1>
         <img src={ArrowDown} alt="ArrowDown" className="arrowDown" />
       </div>
 
+      {/* About me 화면 */}
       <div id="aboutMe-section" className="page-container">
         <div className="aboutMe-content">
           {HomeData.HomeAboutMe.map((paragraph, index) => (
@@ -65,6 +67,7 @@ function Home() {
         </div>
       </div>
 
+      {/* projects 화면 */}
       <div className="projects-wrapper" ref={projectsWrapperRef} style={{ height: `${HomeData.HomeProjectList.length * 160}vh` }}>
         <div className="projects-sticky">
           <div className="projects-section" ref={projectsSectionRef}>
@@ -84,8 +87,31 @@ function Home() {
         </div>
       </div>
 
+      {/* Contact 화면 */}
       <div id="contact-section" className="page-container">
-        <p>Contact 컴포넌트</p>
+        <div className="contact-header-container">
+          <div className="contact-header">
+            <span className="contact-from">from</span>
+            <sapn className="contact-insight">Insight</sapn>
+          </div>
+
+          <div className="contact-divider"></div>
+
+          <div className="contact-header">
+            <span className="contact-to">to</span>
+            <sapn className="contact-action">Action</sapn>
+          </div>
+        </div>
+
+        <div className="contact-main">
+          <h2 className="contact-title">The Choice is Already</h2>
+        </div>
+
+        <div className="contact-button-wrapper">
+          <InteractiveButton targetId="contact-section">Contact</InteractiveButton>
+        </div>
+
+        {/* <div className="contact-arrow-up">↑</div> */}
       </div>
     </div>
   )
