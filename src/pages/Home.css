@@ -6,11 +6,7 @@
 }
 
 .page-container {
-  line-height: 1;
-  /* background-color: var(--color-gray-dark); */
-  /* font-size: 120px;
-  font-weight: 900; */
-  /* font-family: caveat; */
+  line-height: 1.2;
 }
 
 #hero-section {
@@ -22,25 +18,60 @@
   width: 100%;
 }
 
+#aboutMe-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+/* 텍스트 콘텐츠만 중앙 배치 */
+.aboutMe-content {
+  width: 100%;
+  max-width: 1200px; /* 최대 너비 증가 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* 간격 증가 */
+}
+
+.aboutMe-content p {
+  width: 100%;
+  font-size: var(--font-size-body1);
+  color: var(--color-gray-dark);
+  text-align: center;
+  margin: 0;
+  line-height: 1.8; /* 줄 간격 증가 */
+}
+
+/* 버튼을 하단 중앙에 고정 */
+.aboutMe-button-wrapper {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 50px;
+}
+
+.space {
+  font-size: 40px;
+}
+
 .Rogo1 {
-  height: 200px;
-  /* vertical-align: text-bottom; */
+  height: 190px;
   vertical-align: -60px;
 }
 
-.ArrowDown {
+.arrowDown {
   height: 120px;
-  /* width: auto; */
   position: absolute;
   bottom: 50px;
   left: 50%;
   transform: translateX(-50%);
-
   animation: bounce 1.5s infinite ease-in-out;
-}
-
-#AboutMe {
-  height: 100vh;
 }
 
 @keyframes bounce {
@@ -50,5 +81,20 @@
   }
   50% {
     transform: translateX(-50%) translateY(10px);
+  }
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  #aboutMe-section {
+    padding: 40px 20px;
+  }
+
+  .aboutMe-content {
+    max-width: 100%;
+  }
+
+  .aboutMe-button-wrapper {
+    bottom: 60px;
   }
 }

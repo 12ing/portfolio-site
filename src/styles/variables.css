@@ -43,7 +43,7 @@
   --font-weight-h1: var(--font-weight-extrabold);
   --font-family-h1: var(--font-family-pretendard);
 
-  --font-size-h2: 120px;
+  --font-size-h2: 110px;
   --font-weight-h2: var(--font-weight-semibold);
   --font-family-h2: var(--font-family-pretendard);
 
@@ -55,14 +55,14 @@
   --font-size-subtitle: 40px;
   --font-weight-subtitle: var(--font-weight-semibold);
 
-  --font-size-body1: 30px; /* 본문 내용 */
+  --font-size-body1: 25px; /* 본문 내용 */
   --font-weight-body1: var(--font-weight-regular);
 
   /* --font-size-body2: 25px;
   --font-weight-body2: var(--font-weight-regular); */
 
   /* Button & Caption */
-  --font-size-button: 35px;
+  --font-size-button: 25px;
   --font-weight-button: var(--font-weight-regular);
 
   --font-size-caption1: 30px; /* home 프로젝트 번호 */
@@ -90,6 +90,6 @@
   /* ========================================================================= */
 
   /* 버튼 (Button) */
-  --button-size-about-me: 190px; /* About me 버튼의 지름/크기 (120px 추정) */
+  --button-size-button: 160px; /* About me 버튼의 지름/크기 (120px 추정) */
   --button-border-width: 1px;
 }
