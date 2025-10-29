@@ -3,11 +3,11 @@ import { Link, useLocation } from "react-router-dom"
 import "./Header.css"
 import Rogo4 from "../assets/Rogo4.svg"
 
-function Header() {
+function Header({ isVisible }) {
   const location = useLocation()
 
   return (
-    <header className="header">
+    <header className={`header ${isVisible ? "visible" : "hidden"}`}>
       <div className="header__logo">
         <Link to="/">
           <img src={Rogo4} alt="Rim Rogo" className="Rogo4" />

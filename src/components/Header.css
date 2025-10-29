@@ -12,6 +12,19 @@
   height: 100px;
   box-sizing: border-box;
   /* z-index: 1000; */
+
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(0);
+}
+
+/* 스크롤 DOWN */
+.header.hidden {
+  transform: translateY(-100px);
+}
+
+/* 스크롤 UP */
+.header.visible {
+  transform: translateY(0);
 }
 
 .header__logo a {
