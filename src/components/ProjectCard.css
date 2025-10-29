@@ -1,0 +1,202 @@
+.project-card {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  /* color: white; */
+  flex-shrink: 0;
+  position: relative;
+}
+
+.project-card-container {
+  width: 100%;
+  height: 100%;
+  padding: 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 80px; */
+  box-sizing: border-box;
+}
+
+/* 왼쪽 콘텐츠 영역 */
+
+.project-card-content {
+  justify-content: flex-start;
+  text-align: left;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 120px;
+  /* gap: 30px; */
+  /* max-width: 600px; */
+}
+
+.project-card-header {
+  margin-bottom: 40px;
+}
+
+.project-card-number {
+  font-size: var(--font-size-caption1);
+  font-weight: var(--font-weight-caption1);
+  color: var(--color-gray);
+  /* margin-bottom: 10px; */
+}
+
+.project-card-title {
+  color: var(--color-gray-dark);
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-h3);
+  margin: 0;
+  line-height: 1.2;
+  word-break: keep-all;
+}
+
+.project-card-description {
+  color: var(--color-gray);
+  font-size: var(--font-size-body1);
+  font-weight: var(--font-weight-body1);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.project-card-description p {
+  margin: 0;
+  line-height: 1.2;
+  word-break: keep-all;
+}
+
+/* 오른쪽 이미지 영역 */
+.project-card-image {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 30px;
+  margin-top: 150px;
+  /* max-width: 600px; */
+}
+
+.project-card-image img {
+  width: 400px;
+  height: 600px;
+  border: 3px solid var(--color-gray-light);
+  /* width: 100%; */
+  /* height: auto; */
+  /* max-height: 300px; */
+  object-fit: contain;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.projects-button-wrapper {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 60px;
+}
+/* .project-card-image-placeholder {
+  width: 100%;
+  height: 500px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px dashed rgba(255, 255, 255, 0.4);
+}
+
+.project-card-image-placeholder span {
+  font-size: 20px;
+  opacity: 0.7;
+} */
+
+/* 반응형 디자인 */
+/* @media (max-width: 1200px) {
+  .project-card-container {
+    padding: 0 60px;
+    gap: 60px;
+  }
+
+  .project-card-title {
+    font-size: 48px;
+  }
+
+  .project-card-description p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .project-card-description {
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 40px;
+    gap: 40px;
+  }
+
+  .project-card-content {
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .project-card-title {
+    font-size: 40px;
+  }
+
+  .project-card-image {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-card-container {
+    padding: 40px 30px;
+    gap: 30px;
+  }
+
+  .project-card__number {
+    font-size: 24px;
+  }
+
+  .project-card__title {
+    font-size: 32px;
+  }
+
+  .project-card__description p {
+    font-size: 14px;
+  }
+
+  .project-card__detail-btn {
+    padding: 14px 40px;
+    font-size: 18px;
+  }
+
+  .project-card__image-placeholder {
+    height: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card__container {
+    padding: 30px 20px;
+  }
+
+  .project-card__title {
+    font-size: 28px;
+  }
+
+  .project-card__description p {
+    font-size: 13px;
+  }
+
+  .project-card__detail-btn {
+    padding: 12px 35px;
+    font-size: 16px;
+  }
+} */
