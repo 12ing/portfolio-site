@@ -21,7 +21,7 @@ function AboutMeValues({ valueId }) {
   return (
     <section className="aboutme-values-section">
       <div className="aboutme-values-container">
-        {/* 왼쪽: 아이콘 + 타이틀 */}
+        {/* 아이콘 + 타이틀 */}
         <div className="aboutme-values-left">
           <div className="aboutme-values-icon-area">
             <div className="aboutme-values-icon-wrapper">
@@ -31,7 +31,7 @@ function AboutMeValues({ valueId }) {
           </div>
         </div>
 
-        {/* 오른쪽: 텍스트 내용 */}
+        {/* 오른쪽 텍스트 */}
         <div className="aboutme-values-right">
           <span className="aboutme-values-tag">{valueData.tag}</span>
           <h3 className="aboutme-values-subtitle">{valueData.subtitle}</h3>

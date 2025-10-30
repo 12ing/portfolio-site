@@ -110,7 +110,6 @@
   line-height: 1.6;
 }
 
-/* 반응형 */
 @media (max-width: 1024px) {
   .aboutme-values-full-line {
     left: 50%;
