@@ -38,7 +38,7 @@ function Home() {
   return (
     <div className="page-container">
       {/* Hero 화면 */}
-      <div id="hero-section" className="page-container">
+      <div className="hero-section">
         <h1>
           I'm ready.
           <br />
@@ -52,7 +52,7 @@ function Home() {
       </div>
 
       {/* About me 화면 */}
-      <div id="aboutMe-section" className="page-container">
+      <div className="aboutMe-section">
         <div className="aboutMe-content">
           {HomeData.HomeAboutMe.map((paragraph, index) => (
             <p key={index}>{paragraph}</p>
@@ -88,7 +88,7 @@ function Home() {
       </div>
 
       {/* Contact 화면 */}
-      <div id="contact-section" className="page-container">
+      <div className="contact-section">
         <div className="contact-header-container">
           <div className="contact-header">
             <span className="contact-from">from</span>
