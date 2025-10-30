@@ -1,0 +1,240 @@
+/* ========================================================================= */
+/* Hero 화면 */
+/* ========================================================================= */
+
+.page-container h1 {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-h2);
+  margin: auto 0;
+  color: var(--color-background);
+}
+
+.page-container {
+  line-height: 1.2;
+}
+
+.hero-section {
+  background-color: var(--color-gray-dark);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.space {
+  font-size: 40px;
+}
+
+.Rogo1 {
+  height: 190px;
+  vertical-align: -60px;
+}
+
+.arrowDown {
+  height: 120px;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 1.5s infinite ease-in-out;
+}
+
+/* ========================================================================= */
+/* aboutMe 화면 */
+/* ========================================================================= */
+
+.aboutMe-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.aboutMe-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.aboutMe-content p {
+  width: 100%;
+  font-size: var(--font-size-body1);
+  color: var(--color-gray-dark);
+  font-weight: var(--font-weight-body1);
+  text-align: center;
+  margin: 0;
+  line-height: 1.8;
+}
+
+.aboutMe-button-wrapper {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 50px;
+}
+
+/* ========================================================================= */
+/* project 화면 - 세로 스크롤 → 가로 슬라이드 */
+/* ========================================================================= */
+
+.projects-wrapper {
+  position: relative;
+}
+
+.projects-sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.projects-section {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  will-change: scroll-position;
+}
+
+/* ========================================================================= */
+/* contact 화면 */
+/* ========================================================================= */
+
+.contact-section {
+  height: 100vh;
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-primary);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.contact-header-container {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  padding: 60px 100px;
+  display: flex;
+  /* justify-content: space-between; */
+  /* align-items: flex-start; */
+  /* z-index: 1; */
+}
+
+.contact-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-from,
+.contact-to {
+  font-size: var(--font-size-caption2);
+  font-weight: var(--font-weight-caption2);
+  color: var(--color-gray-light);
+  letter-spacing: 1px;
+}
+
+.contact-insight,
+.contact-action {
+  font-family: var(--font-family-logo);
+  font-size: var(--font-size-logo2);
+  font-weight: var(--font-weight-logo);
+  color: var(--color-background);
+  margin: 0;
+}
+
+.contact-divider {
+  flex: 1;
+  height: 1px;
+  background-color: var(--color-background);
+  margin: 0 60px;
+  align-self: center;
+  margin-top: 40px;
+}
+
+/* 메인 콘텐츠 */
+.contact-main {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1400px;
+  margin-top: 50px;
+}
+
+.contact-title {
+  font-size: var(--font-size-h1);
+  /* font-size: clamp(60px, 10vw, 140px); */
+  font-weight: var(--font-weight-h1);
+  color: var(--color-gray-dark);
+  text-align: center;
+  width: 100vw; /* 화면 전체 너비 */
+  max-width: none;
+  margin: 0;
+  white-space: nowrap; /* 한 줄로 강제 */
+  overflow: visible;
+  /* line-height: 1.1; */
+  /* letter-spacing: -2px; */
+}
+
+.contact-button-wrapper {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 50px;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(10px);
+  }
+}
+
+@media (max-width: 768px) {
+  #aboutMe-section {
+    padding: 40px 20px;
+  }
+
+  .aboutMe-content {
+    max-width: 100%;
+  }
+
+  .aboutMe-button-wrapper {
+    bottom: 60px;
+  }
+
+  /* 모바일에서는 세로 스크롤 */
+  .projects-wrapper {
+    height: auto !important;
+  }
+
+  .projects-sticky {
+    position: relative;
+    height: auto;
+  }
+
+  .projects-section {
+    flex-direction: column;
+    height: auto;
+  }
+}

@@ -1,0 +1,113 @@
+.footer {
+  background-color: var(--color-gray-dark);
+  color: var(--color-gray-light);
+}
+
+.footer-content {
+  margin: 0 auto;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-sizing: border-box;
+  position: relative;
+  height: 200px;
+}
+
+/* 로고 섹션 (왼쪽) */
+.footer-logo-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.Rogo4White {
+  height: 40px;
+}
+
+.footer-tagline {
+  font-size: var(caption2);
+  font-weight: var(--font-weight-caption2);
+  color: var(--color-gray-light);
+  margin: 0;
+}
+
+/* 아이콘 영역 (오른쪽) */
+.footer-icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.footer-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  text-decoration: none;
+}
+
+.footer-icons a:hover {
+  transform: translateY(-3px);
+}
+
+.MailIcon,
+.GithubIcon,
+.VelogIcon {
+  width: 40px;
+  height: 40px;
+}
+
+/* 하단 저작권 (중앙) */
+.footer-content > p {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: var(--font-size-caption2);
+  font-weight: var(--font-weight-caption2);
+  margin: 0;
+  opacity: 0.7;
+  white-space: nowrap;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 40px 60px;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  .Rogo4White {
+    height: 32px;
+  }
+
+  .footer-tagline {
+    font-size: 12px;
+  }
+
+  .footer-icons {
+    gap: 16px;
+    align-self: flex-start;
+  }
+
+  .MailIcon,
+  .GithubIcon,
+  .VelogIcon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer-content > p {
+    position: static;
+    transform: none;
+    text-align: center;
+    width: 100%;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+}

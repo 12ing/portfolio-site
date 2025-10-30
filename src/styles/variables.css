@@ -39,15 +39,15 @@
   /* --- Pretendard (메인 폰트) --- */
 
   /* Headline (매우 큰 제목) */
-  --font-size-h1: 185px;
+  --font-size-h1: 183px;
   --font-weight-h1: var(--font-weight-extrabold);
   --font-family-h1: var(--font-family-pretendard);
 
-  --font-size-h2: 120px;
+  --font-size-h2: 110px;
   --font-weight-h2: var(--font-weight-semibold);
   --font-family-h2: var(--font-family-pretendard);
 
-  --font-size-h3: 80px;
+  --font-size-h3: 70px;
   --font-weight-h3: var(--font-weight-bold); /* SemiBold(600)로 보이지만 Bold(700)가 더 일반적 */
   --font-family-h3: var(--font-family-pretendard);
 
@@ -55,28 +55,28 @@
   --font-size-subtitle: 40px;
   --font-weight-subtitle: var(--font-weight-semibold);
 
-  --font-size-body1: 30px; /* 본문 내용 */
+  --font-size-body1: 25px; /* 본문 내용 */
   --font-weight-body1: var(--font-weight-regular);
 
   /* --font-size-body2: 25px;
   --font-weight-body2: var(--font-weight-regular); */
 
   /* Button & Caption */
-  --font-size-button: 35px;
+  --font-size-button: 25px;
   --font-weight-button: var(--font-weight-regular);
 
   --font-size-caption1: 30px; /* home 프로젝트 번호 */
   --font-weight-caption1: var(--font-weight-medium);
 
-  --font-size-caption2: 20px; /* 하단 텍스트 */
+  --font-size-caption2: 15px; /* 하단 텍스트 */
   --font-weight-caption2: var(--font-weight-regular);
 
   /* --- Caveat (로고 폰트) --- */
 
   --font-size-logo1: 180px;
-  --font-size-logo2: 150px;
+  --font-size-logo2: 100px;
   --font-size-logo3: 130px;
-  --font-size-logo4: 50px;
+  --font-size-logo4: 30px;
   --font-weight-logo: var(--font-weight-bold);
   --font-family-logo: var(--font-family-caveat);
 
@@ -90,6 +90,6 @@
   /* ========================================================================= */
 
   /* 버튼 (Button) */
-  --button-size-about-me: 190px; /* About me 버튼의 지름/크기 (120px 추정) */
+  --button-size-button: 160px; /* About me 버튼의 지름/크기 (120px 추정) */
   --button-border-width: 1px;
 }
