@@ -3,7 +3,6 @@ import "./AboutMeContent.css"
 import AboutMeData from "../data/projects.json"
 
 function AboutMeContent({ sectionId }) {
-  // JSON에서 해당 ID의 AboutMeContent 데이터 찾기
   const aboutMeContentData = AboutMeData.AboutMeContent.find((section) => section.id === sectionId)
 
   if (!aboutMeContentData) {
