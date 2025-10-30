@@ -1,0 +1,170 @@
+.aboutme-values-wrapper {
+  position: relative;
+  background-color: var(--color-gray-dark);
+  width: 100%;
+}
+
+.aboutme-values-full-line {
+  position: absolute;
+  left: calc(27% - 10px);
+  top: 16%;
+  width: 2px;
+  height: 64%;
+  background: var(--color-primary);
+  z-index: 1;
+}
+
+.aboutme-values-section {
+  position: relative;
+  z-index: 2;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: var(--color-background);
+  padding: 0px 100px;
+  box-sizing: border-box;
+}
+
+.aboutme-values-container {
+  width: 100%;
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+
+/* 왼쪽 영역 */
+.aboutme-values-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 아이콘 */
+.aboutme-values-icon-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 240px;
+}
+
+.aboutme-values-icon-wrapper {
+  position: relative;
+  width: 240px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.aboutme-values-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* 아이콘 위 텍스트 */
+.aboutme-values-title {
+  position: absolute;
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-h2);
+  color: var(--color-background);
+  text-align: center;
+  text-shadow: 0px 0px 30px var(--color-gray-dark);
+  z-index: 4;
+}
+
+/* 오른쪽 영역 */
+.aboutme-values-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.aboutme-values-tag {
+  font-size: var(--font-size-caption2);
+  font-weight: var(--font-weight-caption1);
+  color: var(--color-gray);
+}
+
+.aboutme-values-subtitle {
+  font-size: var(--font-size-caption1);
+  font-weight: var(--font-weight-caption1);
+  color: var(--color-background);
+  margin: 0 0 15px 0;
+}
+
+.aboutme-values-description {
+  font-size: var(--font-size-body2);
+  font-weight: 300;
+  color: var(--color-gray-light);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* 반응형 */
+@media (max-width: 1024px) {
+  .aboutme-values-full-line {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .aboutme-values-section {
+    padding: 60px 40px;
+  }
+
+  .aboutme-values-container {
+    flex-direction: column;
+    gap: 60px;
+    text-align: center;
+  }
+
+  .aboutme-values-left {
+    align-items: center;
+  }
+
+  .aboutme-values-right {
+    align-items: center;
+    text-align: center;
+  }
+
+  .aboutme-values-icon-area {
+    width: 180px;
+  }
+
+  .aboutme-values-icon-wrapper {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutme-values-section {
+    padding: 60px 20px;
+  }
+
+  .aboutme-values-container {
+    gap: 40px;
+  }
+
+  .aboutme-values-icon-area {
+    width: 140px;
+  }
+
+  .aboutme-values-icon-wrapper {
+    width: 140px;
+    height: 140px;
+  }
+
+  .aboutme-values-title {
+    font-size: clamp(28px, 6vw, 48px);
+  }
+}

@@ -1,3 +1,6 @@
+/* ======================= */
+/* picture 화면 */
+/* ======================= */
 .Picture-section {
   min-height: 100vh;
   width: 100%;
@@ -22,9 +25,6 @@
   text-align: left;
 }
 
-.spaceBig {
-}
-
 .Rogo-aboutMe {
   height: 190px;
   vertical-align: -50px;
@@ -42,6 +42,40 @@
   width: 400px;
   height: 400px;
   margin-right: 60px;
+}
+
+/* ======================= */
+/* AboutMeValues 화면 */
+/* ======================= */
+
+.aboutme-values-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 200px; /* 아이콘 간격 조정 */
+  background-color: var(--color-gray-dark);
+  padding: 200px 0;
+  overflow: hidden;
+}
+
+.aboutme-values-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1.5px;
+  background: linear-gradient(180deg, #4169e1, #7a00ff);
+  transform: translateX(-50%);
+  z-index: 0;
+  opacity: 0.8;
+}
+
+/* 각 AboutMeValues 아이템이 라인 위에 오도록 */
+.aboutme-values-section {
+  position: relative;
+  z-index: 1; /* 라인보다 위로 */
+  background: transparent;
 }
 
 /* 반응형 */
