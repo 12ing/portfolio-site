@@ -1,0 +1,47 @@
+.page-container {
+  font-size: var(--font-size-h2);
+  font-weight: 700;
+  margin: auto 0;
+  color: var(--color-gray-dark);
+}
+
+.contact-hero {
+  background-color: var(--color-background);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.contact-icons {
+  display: flex;
+  gap: 30px;
+}
+
+.contact-icons {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.contact-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  text-decoration: none;
+}
+
+.contact-icons a:hover {
+  transform: translateY(-3px);
+}
+
+.MailIconBig,
+.GithubIconBig,
+.VelogIconBig {
+  width: 50px;
+  height: 50px;
+}
