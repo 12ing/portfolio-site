@@ -58,8 +58,8 @@
   --font-size-body1: 25px; /* 본문 내용 */
   --font-weight-body1: var(--font-weight-regular);
 
-  /* --font-size-body2: 25px;
-  --font-weight-body2: var(--font-weight-regular); */
+  --font-size-body2: 20px;
+  --font-weight-body2: var(--font-weight-regular);
 
   /* Button & Caption */
   --font-size-button: 25px;

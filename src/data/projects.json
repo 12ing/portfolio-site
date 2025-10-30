@@ -29,5 +29,126 @@
       "color": "#ffc107",
       "imageUrl": "url_for_project_3_image"
     }
+  ],
+  "AboutMeContent": [
+    {
+      "id": "problem",
+      "title": "Problem",
+      "subtitle": "작은 문제라도 관찰하고 분석합니다."
+    },
+    {
+      "id": "solution",
+      "title": "Solution",
+      "subtitle": "이러한 저의 태도가 올바른 해결책을 가져온다고 믿습니다."
+    }
+  ],
+  "AboutMeValues": [
+    {
+      "id": 1,
+      "title": "Insight",
+      "tag": "from",
+      "subtitle": "관찰을 바탕으로 인사이트를 발견합니다.",
+      "description": "사용자의 시간을 아끼고, 감정적인 피로를 덜어주는 경험 설계를 중요하게 생각합니다. 사용자 입장에서 생각하는 태도가 모든 결정의 기준이 됩니다."
+    },
+    {
+      "id": 2,
+      "title": "Action",
+      "tag": "to",
+      "subtitle": "주도적으로 행동하여 변화를 만듭니다.",
+      "description": "작은 디테일이 전체 경험에 큰 영향을 미친다고 믿으며, 세심한 주의를 기울입니다."
+    },
+    {
+      "id": 3,
+      "title": "Repeat",
+      "tag": "and",
+      "subtitle": "여러번의 반복을 통해 개선합니다.",
+      "description": "끊임없이 배우고 성장하며, 더 나은 솔루션을 찾기 위해 노력합니다."
+    }
+  ],
+  "awards": [
+    {
+      "year": 2025,
+      "name": "SSAFY 전시발표회 전시부문 3등"
+    },
+    {
+      "year": 2025,
+      "name": "SSAFY 자율 프로젝트 기업연계 우수상 (1등)"
+    },
+    {
+      "year": 2025,
+      "name": "SSAFY 특화 프로젝트 우수상 (2등)"
+    },
+    {
+      "year": 2025,
+      "name": "SSAFY 공통 프로젝트 우수상 (1등)"
+    }
+  ],
+  "certifications": [
+    {
+      "year": 2008,
+      "name": "컴퓨터 활용능력 3급"
+    },
+    {
+      "year": 2009,
+      "name": "워드프로세서 2급"
+    },
+    {
+      "year": 2010,
+      "name": "ITQ 인터넷 A등급"
+    }
+  ],
+  "activities": [
+    {
+      "year": "2024 - 2025",
+      "name": "삼성 청년 SW 아카데미 12기 수료"
+    },
+    {
+      "year": "2024 - 2025",
+      "name": "SSAFYcial"
+    },
+    {
+      "year": "2024 - 2025",
+      "name": "SSAFY 1학기 반장"
+    },
+    {
+      "year": "2024",
+      "name": "K-일러스트페어"
+    },
+    {
+      "year": "2023",
+      "name": "서울 일러스트레이션페어"
+    },
+    {
+      "year": "2023",
+      "name": "수원 일러스트코리아"
+    },
+    {
+      "year": "2020",
+      "name": "뷰티디자인 졸업준비위원회"
+    }
+  ],
+  "experience": [
+    {
+      "period": "2023 - 2024",
+      "role": "나마네카드 외주 (카드디자인)"
+    },
+    {
+      "period": "2024 - 2026",
+      "role": "게티이미지뱅크 외주 (일러스트디자인)"
+    },
+    {
+      "period": "2023",
+      "role": "미소포토 홍대 외주 (프레임디자인)"
+    }
+  ],
+  "education": [
+    {
+      "period": "2019 - 2022",
+      "school": "건국대학교 글로컬 뷰티디자인 & 영상디자인 전공"
+    },
+    {
+      "period": "2016 - 2019",
+      "school": "신한대학교 산업디자인 전공"
+    }
   ]
 }
