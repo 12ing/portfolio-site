@@ -21,7 +21,19 @@ function Contact() {
           </span>
         </p>
 
-        
+        <div className="contact-icons">
+          <a href="https://velog.io/@riming/posts" target="_blank" rel="" label="MailIconBig">
+            <img src={MailIconBig} alt="MailIconBig" className="MailIconBig" />
+          </a>
+
+          <a href="https://github.com/12ing" target="_blank" rel="" label="GithubIconBig">
+            <img src={GithubIconBig} alt="GithubIconBig" className="GithubIconBig" />
+          </a>
+
+          <a href="https://velog.io/@riming/posts" target="_blank" rel="" label="VelogIconBig">
+            <img src={VelogIconBig} alt="VelogIconBig" className="VelogIconBig" />
+          </a>
+        </div>
       </div>
     </div>
   )
