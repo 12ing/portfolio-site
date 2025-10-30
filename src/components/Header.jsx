@@ -8,13 +8,13 @@ function Header({ isVisible }) {
 
   return (
     <header className={`header ${isVisible ? "visible" : "hidden"}`}>
-      <div className="header__logo">
+      <div className="header-logo">
         <Link to="/">
           <img src={Rogo4} alt="Rim Rogo" className="Rogo4" />
         </Link>
       </div>
 
-      <nav className="header__nav">
+      <nav className="header-nav">
         <Link to="/aboutMe" className={location.pathname === "/aboutMe" ? "active" : ""}>
           about me
         </Link>

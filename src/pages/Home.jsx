@@ -92,7 +92,7 @@ function Home() {
         <div className="contact-header-container">
           <div className="contact-header">
             <span className="contact-from">from</span>
-            <sapn className="contact-insight">Insight</sapn>
+            <span className="contact-insight">Insight</span>
           </div>
 
           <div className="contact-divider"></div>

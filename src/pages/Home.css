@@ -209,7 +209,7 @@
   }
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   #aboutMe-section {
     padding: 40px 20px;
   }
@@ -236,4 +236,4 @@
     flex-direction: column;
     height: auto;
   }
-} */
+}
