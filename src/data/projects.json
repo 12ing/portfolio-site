@@ -29,5 +29,17 @@
       "color": "#ffc107",
       "imageUrl": "url_for_project_3_image"
     }
+  ],
+  "AboutMeContent": [
+    {
+      "id": "problem",
+      "title": "Problem",
+      "subtitle": "작은 문제라도 관찰하고 분석합니다."
+    },
+    {
+      "id": "solution",
+      "title": "Solution",
+      "subtitle": "이러한 저의 태도가 올바른 해결책을 가져온다고 믿습니다."
+    }
   ]
 }

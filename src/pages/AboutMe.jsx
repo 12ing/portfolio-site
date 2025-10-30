@@ -2,6 +2,9 @@ import React from "react"
 import "./aboutMe.css"
 import Rogo1 from "../assets/rogo1.svg"
 import Picture from "../assets/picture.svg"
+import AboutMeContent from "../components/AboutMeContent"
+
+
 
 function AboutMe() {
   return (
@@ -25,6 +28,15 @@ function AboutMe() {
         </p>
         <img src={Picture} alt="Picture" className="Picture" />
       </div>
+
+      {/* Problem 화면 */}
+      <div className="aboutme-problem-page">
+        {/* "philosophy" ID로 AboutMeContent 데이터 사용 */}
+        <AboutMeContent sectionId="problem" />
+
+        {/* 추가 콘텐츠 */}
+      </div>
+      {/* Sloution 화면 */}
     </div>
   )
 }
