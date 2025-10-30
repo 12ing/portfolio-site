@@ -6,6 +6,7 @@ import AboutMeContent from "../components/AboutMeContent"
 import AboutMeValues from "../components/AboutMeValues"
 import AboutMeData from "../data/projects.json"
 import AboutMeSkills from "../components/AboutMeSkills"
+import AboutMeResume from "../components/AboutMeResume"
 
 function AboutMe() {
   return (
@@ -56,6 +57,7 @@ function AboutMe() {
       {/* Skills 화면 */}
       <AboutMeSkills />
       {/* Resume 화면 */}
+      <AboutMeResume />
     </div>
   )
 }
