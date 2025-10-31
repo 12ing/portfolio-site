@@ -5,6 +5,7 @@ import ArrowDown from "../assets/arrowDown.svg"
 import InteractiveButton from "../components/button"
 import ProjectCard from "../components/ProjectCard"
 import RimBig from "../assets/RimBig.svg"
+import ScrollToTopButton from "../components/ScrollToTopButton"
 
 import HomeData from "../data/projects.json"
 
@@ -110,6 +111,8 @@ function Home() {
           <InteractiveButton targetId="contact">Contact</InteractiveButton>
         </div>
       </section>
+
+      <ScrollToTopButton />
     </div>
   )
 }

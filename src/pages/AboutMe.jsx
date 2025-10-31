@@ -7,6 +7,7 @@ import AboutMeValues from "../components/AboutMeValues"
 import AboutMeData from "../data/projects.json"
 import AboutMeSkills from "../components/AboutMeSkills"
 import AboutMeResume from "../components/AboutMeResume"
+import ScrollToTopButton from "../components/ScrollToTopButton"
 
 function AboutMe() {
   return (
@@ -58,6 +59,8 @@ function AboutMe() {
       <AboutMeSkills />
       {/* Resume 화면 */}
       <AboutMeResume />
+
+      <ScrollToTopButton />
     </div>
   )
 }
