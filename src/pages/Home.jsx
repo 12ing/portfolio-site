@@ -9,7 +9,17 @@ import ScrollToTopButton from "../components/ScrollToTopButton"
 
 import HomeData from "../data/projects.json"
 
+import homeModa from "../assets/homeModa.svg"
+import homeChaing from "../assets/homeChaing.svg"
+import homeTT from "../assets/homeTT.svg"
+
 function Home() {
+  const imageMap = {
+    moda: homeModa,
+    chaing: homeChaing,
+    tooning: homeTT,
+  }
+
   const projectsWrapperRef = useRef(null)
   const projectsSectionRef = useRef(null)
 
@@ -90,7 +100,7 @@ function Home() {
                 title={project.title}
                 description={project.description}
                 color={project.color}
-                imageUrl={project.imageUrl}
+                imageUrl={imageMap[project.projectId]}
                 cardIndex={index}
                 totalCards={HomeData.HomeProjectList.length}
                 projectId={project.projectId}
