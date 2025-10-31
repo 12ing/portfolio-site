@@ -22,8 +22,8 @@ import ReactIcon from "../assets/skillsIcons/reactIcon.svg"
 function AboutMeSkills() {
   const ref = useRef(null)
   const isInView = useInView(ref, {
-    once: false, // 한 번만 실행
-    amount: 0.3, // 섹션의 30%가 보이면 트리거 (쉬운 조건)
+    once: false,
+    amount: 0.5,
   })
 
   // 아이콘 데이터 배열

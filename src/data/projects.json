@@ -150,5 +150,46 @@
       "period": "2016 - 2019",
       "school": "신한대학교 산업디자인 전공"
     }
+  ],
+  "projects": [
+    {
+      "id": "moda",
+      "badge": "👑 1등 프로젝트",
+      "subtitle": "저장의 경험을 '발견'의 경험으로 전환하다",
+      "title": "모다",
+      "englishTitle": "MODA",
+      "tags": ["Kotlin", "SpringBoot", "FastAPI", "JPA"],
+      "description": "사용자가 자장한 정보를 다시 발견할 수 있도록\nUX 구조 재설계 프로젝트",
+      "period": "2025.01 - 2025.02 (6주)",
+      "team": "Frontend 2명, Backend 3명, Fullstack 1명 (총 6명)",
+      "role": "Frontend, UI/UX 디자인, 기획, PPT/영상 프로덕션& 제작",
+      "relatedProjects": ["chaing", "tooning"]
+    },
+    {
+      "id": "chaing",
+      "badge": "👑 2등 프로젝트",
+      "subtitle": "블록체인 기반 등거 서약 관리 서비스",
+      "title": "Chain G",
+      "englishTitle": "ChainG",
+      "tags": ["React", "Redux", "TypeScript", "Next.js", "SpringBoot", "FastAPI", "JPA"],
+      "description": "친한 사람들과 돈 떼이로 어색하지 않도록,\n기버지만 신리할 수 있게 정리해주는 코리빙 서비스!",
+      "period": "2025.02 - 2025.04 (6주)",
+      "team": "Frontend 3명, Backend 3명 (총 6명)",
+      "role": "Frontend, UI/UX 디자인, 기획, PPT/영상 프로덕션& 제작",
+      "relatedProjects": ["moda", "tooning"]
+    },
+    {
+      "id": "tooning",
+      "badge": "👑 1등 프로젝트",
+      "subtitle": "AI 창작의 터닝포인트, 투닝 에디터에 실시간 협업 능력을 더하다",
+      "title": "TOONING TOGETHER",
+      "englishTitle": "TooningTogether",
+      "tags": ["Angular", "Ionic Framework", "Node.js", "GraphQL", "Yjs"],
+      "description": "초등학생이 함께 웹툰을 제작할 수 있도록\n실시간 협업기능을 제공하는 서비스",
+      "period": "2025.04 - 2025.05 (6주)",
+      "team": "Frontend 3명, Fullstack 3명 (총 6명)",
+      "role": "Frontend, UI/UX 디자인, 기획, PPT/영상/배너 제작",
+      "relatedProjects": ["moda", "chaing"]
+    }
   ]
 }

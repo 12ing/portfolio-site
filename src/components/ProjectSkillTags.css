@@ -1,0 +1,24 @@
+.skill-tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.skill-tag {
+  padding: 8px 20px;
+  border: 1px solid var(--color-gray-dark);
+  border-radius: 50px;
+  font-size: var(--font-size-caption2);
+  font-weight: var(--font-weight-caption2);
+  /* transition: all 0.3s ease; */
+}
+
+.skill-tag.frontend {
+  background-color: var(--color-gray-dark);
+  color: var(--color-background);
+}
+.skill-tag.backend {
+  background-color: var(--color-background);
+}

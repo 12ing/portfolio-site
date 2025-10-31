@@ -1,0 +1,19 @@
+.project-icon-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  width: 60px;
+}
+
+.project-icon-button:hover {
+  transform: scale(1.08);
+}
+
+.project-icon-button.active {
+  transform: scale(1.15);
+}
