@@ -15,16 +15,16 @@ function Footer() {
         </div>
 
         <div className="footer-icons">
-          <a href="https://velog.io/@riming/posts" target="_blank" rel="" label="MailIcon">
-            <img src={MailIcon} alt="MailIcon" className="MailIcon" />
+          <a href="https://mail.google.com/mail/?view=cm&to=lll123kong2mm@gmail.com" target="_blank" rel="" label="MailIcon">
+            <img src={MailIcon} alt="메일 보내기" className="MailIcon" />
           </a>
 
           <a href="https://github.com/12ing" target="_blank" rel="" label="GithubIcon">
-            <img src={GithubIcon} alt="Rim GithubIcon" className="GithubIcon" />
+            <img src={GithubIcon} alt="Rim 링크" className="GithubIcon" />
           </a>
 
           <a href="https://velog.io/@riming/posts" target="_blank" rel="" label="VelogIcon">
-            <img src={VelogIcon} alt="VelogIcon" className="VelogIcon" />
+            <img src={VelogIcon} alt="Velog 링크" className="VelogIcon" />
           </a>
         </div>
 

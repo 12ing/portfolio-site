@@ -1,33 +1,32 @@
 {
-  "HomeAboutMe": [
-    "디자인적 사고를 통해, 사용자가 의식하지 못하는 작은 불편함을 찾아 해결하는 데 큰 보람을 느낍니다.",
-    "사용자의 경험을 개선하는 것이 저의 핵심가치이며, 이를  통해 더 나은 서비스를 제공하는 것을 목표로 합니다.",
-    "저는 작은 부분에서의 개선이 결국, '다시 찾고 싶은 서비스'로 이어진다고 믿습니다."
-  ],
+  "HomeAboutMe": ["작은 문제라도 관찰하고 분석하며,", "이를 통해 발견한 인사이트를 바탕으로 주도적으로 행동합니다"],
   "HomeProjectList": [
     {
       "id": 1,
       "number": "01",
-      "title": "모다 서비스",
-      "description": "STAR 방식으로 어떤 문제 파악, 해결했는지 간략하게 작성\nSTAR 방식으로 어떤 문제 파악, 해결했는지 간략하게 작성\nSTAR 방식으로 어떤 문제 파악, 해결했는지",
+      "title": "다양한 정보를 '발견'하는 경험",
+      "description": "기존의 서비스들은 그저 정보를 저장하고, 분류하는데 그쳤다면, \n '모다'는 사용자가 저장한 정보를 다시 발견할 수 있도록 \n 커머스 UX 관점에서 재설계한 프로젝트입니다.",
       "color": "#4169E1",
-      "imageUrl": "url_for_project_1_image"
+      "imageUrl": "url_for_project_1_image",
+      "projectId": "moda"
     },
     {
       "id": 2,
       "number": "02",
-      "title": "체인지 서비스",
-      "description": "STAR 방식으로 사용자 경험(UX) 문제를 어떻게 파악하고 개선했는지 설명\n사용자들이 기록을 쉽게 할 수 있도록 UI/UX를 어떻게 설계했는지 설명\n개인화 추천 알고리즘의 주요 특징 및 성과",
+      "title": "계약서보단 가벼운 서약서로",
+      "description": "친한사람들과 돈 때문에 불편해지지않도록, \n 블록체인 기술을 활용하여 투명하고 안전하게 \n 동거생활을 할 수 있도록 도와주는 코리빙 서비스입니다.",
       "color": "#28a745",
-      "imageUrl": "url_for_project_2_image"
+      "imageUrl": "url_for_project_2_image",
+      "projectId": "chaing"
     },
     {
       "id": 3,
       "number": "03",
       "title": "실시간 협업 웹툰 제작 서비스",
-      "description": "STAR 방식으로 디자인 에셋 관리의 비효율성을 어떻게 정의했는지 서술\nAI 모델(e.g., YOLO, Mask R-CNN)을 활용하여 요소를 분리한 방법\n결과적으로 디자이너의 작업 시간을 얼마나 단축시켰는지 명시",
+      "description": "기존에 서비스 되고 있는 'Tooning Editor'에 \n 학생들이 함께 웹툰을 제작할 수 있도록 \n 실시간 협업기능을 추가한 프로젝트입니다.",
       "color": "#ffc107",
-      "imageUrl": "url_for_project_3_image"
+      "imageUrl": "url_for_project_3_image",
+      "projectId": "tooning"
     }
   ],
   "AboutMeContent": [
@@ -48,21 +47,21 @@
       "title": "Insight",
       "tag": "from",
       "subtitle": "관찰을 바탕으로 인사이트를 발견합니다.",
-      "description": "사용자의 시간을 아끼고, 감정적인 피로를 덜어주는 경험 설계를 중요하게 생각합니다. 사용자 입장에서 생각하는 태도가 모든 결정의 기준이 됩니다."
+      "description": "사용자의 행동을 세심히 관찰하고, 그 안에 숨은 불편함과 니즈를 찾아냅니다. \n 데이터와 맥락을 함께 읽어내며 문제의 본질을 재구성하고, \n 실질적인 해결의 단서를 발견합니다."
     },
     {
       "id": 2,
       "title": "Action",
       "tag": "to",
       "subtitle": "주도적으로 행동하여 변화를 만듭니다.",
-      "description": "작은 디테일이 전체 경험에 큰 영향을 미친다고 믿으며, 세심한 주의를 기울입니다."
+      "description": "새로운 도전을 주저하지 않고, 완벽하지 않아도 일단 실행하며 \n 배우는 과정에서 성장합니다. 프로젝트와 개인 창업 경험을 통해, \n 기획부터 디자인 · 마케팅까지 전 과정을 스스로 주도하며 완성했습니다."
     },
     {
       "id": 3,
       "title": "Repeat",
       "tag": "and",
       "subtitle": "여러번의 반복을 통해 개선합니다.",
-      "description": "끊임없이 배우고 성장하며, 더 나은 솔루션을 찾기 위해 노력합니다."
+      "description": "완벽보다 성장을 추구하며, 프로젝트마다 회고를 진행하며 \n 개선점을 찾아 기록합니다. 실패를 두려워하기보다, \n 빠르게 학습하고 수정을 통해 더 나은 결과를 만듭니다."
     }
   ],
   "awards": [
@@ -159,36 +158,36 @@
       "title": "모다",
       "englishTitle": "MODA",
       "tags": ["Kotlin", "SpringBoot", "FastAPI", "JPA"],
-      "description": "사용자가 자장한 정보를 다시 발견할 수 있도록\nUX 구조 재설계 프로젝트",
+      "description": "사용자가 저장한 정보를 다시 발견할 수 있도록\n UX 구조 재설계 프로젝트",
       "period": "2025.01 - 2025.02 (6주)",
       "team": "Frontend 2명, Backend 3명, Fullstack 1명 (총 6명)",
-      "role": "Frontend, UI/UX 디자인, 기획, PPT/영상 프로덕션& 제작",
+      "role": "Frontend, UI/UX 디자인, 기획, PPT / 영상제작",
       "relatedProjects": ["chaing", "tooning"]
     },
     {
       "id": "chaing",
       "badge": "👑 2등 프로젝트",
-      "subtitle": "블록체인 기반 등거 서약 관리 서비스",
+      "subtitle": "블록체인 기반 동거 서약 관리 서비스",
       "title": "Chain G",
       "englishTitle": "ChainG",
       "tags": ["React", "Redux", "TypeScript", "Next.js", "SpringBoot", "FastAPI", "JPA"],
-      "description": "친한 사람들과 돈 떼이로 어색하지 않도록,\n기버지만 신리할 수 있게 정리해주는 코리빙 서비스!",
+      "description": "친한 사람들과 돈 문제로 불편해지지 않도록,\n 가볍지만 신리할 수 있는 코리빙 서비스",
       "period": "2025.02 - 2025.04 (6주)",
       "team": "Frontend 3명, Backend 3명 (총 6명)",
-      "role": "Frontend, UI/UX 디자인, 기획, PPT/영상 프로덕션& 제작",
+      "role": "Frontend, UI/UX 디자인, 기획, PPT / 영상제작",
       "relatedProjects": ["moda", "tooning"]
     },
     {
       "id": "tooning",
       "badge": "👑 1등 프로젝트",
-      "subtitle": "AI 창작의 터닝포인트, 투닝 에디터에 실시간 협업 능력을 더하다",
+      "subtitle": "AI 창작의 터닝포인트, 투닝 에디터에 실시간 협업 기능을 더하다",
       "title": "TOONING TOGETHER",
       "englishTitle": "TooningTogether",
       "tags": ["Angular", "Ionic Framework", "Node.js", "GraphQL", "Yjs"],
       "description": "초등학생이 함께 웹툰을 제작할 수 있도록\n실시간 협업기능을 제공하는 서비스",
       "period": "2025.04 - 2025.05 (6주)",
       "team": "Frontend 3명, Fullstack 3명 (총 6명)",
-      "role": "Frontend, UI/UX 디자인, 기획, PPT/영상/배너 제작",
+      "role": "Frontend, UI/UX 디자인, 기획, PPT / 영상 / 배너제작",
       "relatedProjects": ["moda", "chaing"]
     }
   ]

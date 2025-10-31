@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback, useRef } from "react"
 import "./Projects.css"
 import ProjectDetail from "../components/ProjectDetail"
 import { motion, AnimatePresence } from "framer-motion"
+import { useParams } from "react-router-dom"
 
 import moda1 from "../assets/projects/moda1.png"
 import moda2 from "../assets/projects/moda2.png"
@@ -17,11 +18,19 @@ import TT2 from "../assets/projects/TT2.png"
 import TT3 from "../assets/projects/TT3.png"
 
 function Projects() {
-  const [activeProject, setActiveProject] = useState("moda")
+  const { projectId } = useParams()
+
+  const [activeProject, setActiveProject] = useState(projectId || "moda")
   const [selectedImage, setSelectedImage] = useState(null)
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isDragging, setIsDragging] = useState(false)
   const startXRef = useRef(0)
+
+  useEffect(() => {
+    if (projectId) {
+      setActiveProject(projectId)
+    }
+  }, [projectId])
 
   const projectImages = {
     moda: [moda1, moda2, moda3],
@@ -29,7 +38,7 @@ function Projects() {
     tooning: [TT1, TT2, TT3],
   }
 
-  const total = projectImages[activeProject].length
+  const total = projectImages[activeProject]?.length || 0
 
   const handleNext = () => setCurrentIndex((prev) => (prev + 1) % total)
   const handlePrev = () => setCurrentIndex((prev) => (prev - 1 + total) % total)
@@ -74,20 +83,17 @@ function Projects() {
   }
 
   const closeModal = () => setSelectedImage(null)
-
   return (
     <div className="page-container">
       <div className="projects-container">
         <ProjectDetail currentProjectId={activeProject} setActiveProject={setActiveProject} />
 
-        {/* 이미지 리스트 */}
         <div className="project-images">
           {projectImages[activeProject]?.map((img, idx) => (
             <img key={idx} src={img} alt={`${activeProject}-img-${idx}`} className="project-image" onClick={() => openModal(idx)} />
           ))}
         </div>
 
-        {/* 모달 */}
         <AnimatePresence>
           {selectedImage && (
             <motion.div

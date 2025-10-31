@@ -98,7 +98,7 @@
   border-color: var(--fill-color);
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .interactive-button {
     --size: 140px;
   }
@@ -112,4 +112,4 @@
   .interactive-button-container {
     padding: 20px;
   }
-}
+} */

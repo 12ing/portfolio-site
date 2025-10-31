@@ -22,16 +22,16 @@ function Contact() {
         </p>
 
         <div className="contact-icons">
-          <a href="https://velog.io/@riming/posts" target="_blank" rel="" label="MailIconBig">
-            <img src={MailIconBig} alt="MailIconBig" className="MailIconBig" />
+          <a href="https://mail.google.com/mail/?view=cm&to=lll123kong2mm@gmail.com" target="_blank" rel="" label="MailIconBig">
+            <img src={MailIconBig} alt="메일 보내기" className="MailIconBig" />
           </a>
 
           <a href="https://github.com/12ing" target="_blank" rel="" label="GithubIconBig">
-            <img src={GithubIconBig} alt="GithubIconBig" className="GithubIconBig" />
+            <img src={GithubIconBig} alt="Github 링크" className="GithubIconBig" />
           </a>
 
           <a href="https://velog.io/@riming/posts" target="_blank" rel="" label="VelogIconBig">
-            <img src={VelogIconBig} alt="VelogIconBig" className="VelogIconBig" />
+            <img src={VelogIconBig} alt="Velog 링크" className="VelogIconBig" />
           </a>
         </div>
       </div>
