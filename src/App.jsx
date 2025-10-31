@@ -18,24 +18,20 @@ function App() {
   const [showHeader, setShowHeader] = useState(true)
   const [lastScrollY, setLastScrollY] = useState(0)
 
+  // 🔹 헤더 표시 제어
   const handleScroll = () => {
     const currentScrollY = window.scrollY
 
-    // 스크롤 down
     if (currentScrollY > lastScrollY && currentScrollY > SCROLL_THRESHOLD) {
-      setShowHeader(false)
-    }
-    // 스크롤 up
-    else if (currentScrollY < lastScrollY) {
-      setShowHeader(true)
+      setShowHeader(false) // 스크롤 내릴 때 숨김
+    } else if (currentScrollY < lastScrollY) {
+      setShowHeader(true) // 스크롤 올릴 때 표시
     }
 
-    // 최상단 이동
     if (currentScrollY <= SCROLL_THRESHOLD) {
       setShowHeader(true)
     }
 
-    // 이전 스크롤 위치 업데이트
     setLastScrollY(currentScrollY)
   }
 
@@ -45,6 +41,38 @@ function App() {
       window.removeEventListener("scroll", handleScroll)
     }
   }, [lastScrollY])
+
+  // 🔹 이미지 우클릭 / 드래그 / 복사 방지
+  useEffect(() => {
+    // 이미지 우클릭 방지
+    const handleContextMenu = (e) => {
+      if (e.target.tagName === "IMG") {
+        e.preventDefault()
+      }
+    }
+
+    // 이미지 드래그 방지
+    const handleDragStart = (e) => {
+      if (e.target.tagName === "IMG") {
+        e.preventDefault()
+      }
+    }
+
+    // 복사(Ctrl+C) 방지
+    const handleCopy = (e) => {
+      e.preventDefault()
+    }
+
+    document.addEventListener("contextmenu", handleContextMenu)
+    document.addEventListener("dragstart", handleDragStart)
+    document.addEventListener("copy", handleCopy)
+
+    return () => {
+      document.removeEventListener("contextmenu", handleContextMenu)
+      document.removeEventListener("dragstart", handleDragStart)
+      document.removeEventListener("copy", handleCopy)
+    }
+  }, [])
 
   return (
     <div className="app-wrapper">
