@@ -75,7 +75,7 @@ function Home() {
         </div>
 
         <div className="aboutMe-button-wrapper">
-          <InteractiveButton targetId="aboutMe-section">
+          <InteractiveButton targetId="aboutMe">
             About
             <br />
             me
@@ -97,6 +97,7 @@ function Home() {
                 imageUrl={project.imageUrl}
                 cardIndex={index}
                 totalCards={HomeData.HomeProjectList.length}
+                projectId={project.projectId}
               />
             ))}
           </div>
@@ -111,7 +112,7 @@ function Home() {
         </div>
 
         <div className="contact-button-wrapper">
-          <InteractiveButton targetId="contact-section" className="contact-hover-trigger">
+          <InteractiveButton targetId="contact" className="contact-hover-trigger">
             Contact
           </InteractiveButton>
         </div>

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react"
 import "./ProjectCard.css"
 import InteractiveButton from "../components/button"
 
-const ProjectCard = ({ number, title, description, color, imageUrl, onClick, cardIndex, totalCards }) => {
+const ProjectCard = ({ number, title, description, color, imageUrl, onClick, cardIndex, totalCards, projectId }) => {
   const descriptionLines = description.split("\n")
   const cardRef = useRef(null)
   const lastProgress = useRef(0)
@@ -142,7 +142,7 @@ const ProjectCard = ({ number, title, description, color, imageUrl, onClick, car
       </div>
 
       <div className={`projects-button-wrapper ${visibleItems.button ? "visible" : ""}`}>
-        <InteractiveButton targetId="projects-section">Details</InteractiveButton>
+        <InteractiveButton targetId={`projects/${projectId}`}>Details</InteractiveButton>
       </div>
     </div>
   )

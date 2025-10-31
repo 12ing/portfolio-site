@@ -7,7 +7,8 @@
       "title": "모다 서비스",
       "description": "STAR 방식으로 어떤 문제 파악, 해결했는지 간략하게 작성\nSTAR 방식으로 어떤 문제 파악, 해결했는지 간략하게 작성\nSTAR 방식으로 어떤 문제 파악, 해결했는지",
       "color": "#4169E1",
-      "imageUrl": "url_for_project_1_image"
+      "imageUrl": "url_for_project_1_image",
+      "projectId": "moda"
     },
     {
       "id": 2,
@@ -15,7 +16,8 @@
       "title": "체인지 서비스",
       "description": "STAR 방식으로 사용자 경험(UX) 문제를 어떻게 파악하고 개선했는지 설명\n사용자들이 기록을 쉽게 할 수 있도록 UI/UX를 어떻게 설계했는지 설명\n개인화 추천 알고리즘의 주요 특징 및 성과",
       "color": "#28a745",
-      "imageUrl": "url_for_project_2_image"
+      "imageUrl": "url_for_project_2_image",
+      "projectId": "chaing"
     },
     {
       "id": 3,
@@ -23,7 +25,8 @@
       "title": "실시간 협업 웹툰 제작 서비스",
       "description": "STAR 방식으로 디자인 에셋 관리의 비효율성을 어떻게 정의했는지 서술\nAI 모델(e.g., YOLO, Mask R-CNN)을 활용하여 요소를 분리한 방법\n결과적으로 디자이너의 작업 시간을 얼마나 단축시켰는지 명시",
       "color": "#ffc107",
-      "imageUrl": "url_for_project_3_image"
+      "imageUrl": "url_for_project_3_image",
+      "projectId": "tooning"
     }
   ],
   "AboutMeContent": [

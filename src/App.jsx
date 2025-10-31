@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route, Navigate } from "react-router-dom"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 
@@ -50,7 +50,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aboutMe" element={<AboutMe />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route path="/projects" element={<Navigate to="/projects/moda" replace />} />
+          <Route path="/projects/:projectId" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>

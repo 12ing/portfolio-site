@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react"
+import { useNavigate } from "react-router-dom"
 import "./button.css"
 import ArrowButton from "../assets/arrowButton.svg"
 
@@ -7,6 +8,7 @@ const InteractiveButton = ({ children, targetId }) => {
   const [isHovered, setIsHovered] = useState(false)
   const buttonRef = useRef(null)
   const containerRef = useRef(null)
+  const navigate = useNavigate()
 
   const handleContainerMouseMove = (e) => {
     if (containerRef.current && buttonRef.current) {
@@ -51,13 +53,7 @@ const InteractiveButton = ({ children, targetId }) => {
   const handleClick = (e) => {
     e.preventDefault()
     if (targetId) {
-      const targetElement = document.getElementById(targetId)
-      if (targetElement) {
-        window.scrollTo({
-          top: targetElement.offsetTop,
-          behavior: "smooth",
-        })
-      }
+      navigate(`/${targetId}`)
     }
   }
 
