@@ -18,7 +18,7 @@ function Header({ isVisible }) {
         <Link to="/aboutMe" className={location.pathname === "/aboutMe" ? "active" : ""}>
           about me
         </Link>
-        <Link to="/projects" className={location.pathname === "/projects" ? "active" : ""}>
+        <Link to="/projects" className={location.pathname.startsWith("/projects") ? "active" : ""}>
           projects
         </Link>
         <Link to="/contact" className={location.pathname === "/contact" ? "active" : ""}>
