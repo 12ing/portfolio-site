@@ -1,9 +1,8 @@
-import React, { useState } from "react"
+import React from "react"
 import ProjectIconButton from "./ProjectIconButton"
 import projectsData from "../data/projects.json"
 import ProjectSkillTags from "./ProjectSkillTags"
 
-// 로고 SVG import
 import ModaRogo from "../assets/modaRogo.svg"
 import ChainGLogo from "../assets/chaingRogo.svg"
 import TTRogo from "../assets/TTRogo.svg"
@@ -19,20 +18,15 @@ import TTIconActive from "../assets/TTActive.svg"
 
 import "./ProjectDetail.css"
 
-/**
- * 프로젝트 상세 페이지 컴포넌트
- */
-const ProjectDetail = ({ currentProjectId = "moda" }) => {
-  const [activeProject, setActiveProject] = useState(currentProjectId)
+const ProjectDetail = ({ currentProjectId, setActiveProject }) => {
+  const activeProject = currentProjectId
 
-  // 현재 프로젝트 데이터 가져오기
   const currentProject = projectsData.projects.find((project) => project.id === activeProject)
 
   if (!currentProject) {
     return <div>프로젝트를 찾을 수 없습니다.</div>
   }
 
-  // 중앙 로고 매핑
   const projectLogoMap = {
     moda: ModaRogo,
     chaing: ChainGLogo,
@@ -41,7 +35,6 @@ const ProjectDetail = ({ currentProjectId = "moda" }) => {
 
   const currentLogo = projectLogoMap[activeProject] || ModaRogo
 
-  // 버튼 아이콘 매핑
   const projectIconMap = {
     moda: {
       default: ModaIconDefault,
@@ -56,6 +49,14 @@ const ProjectDetail = ({ currentProjectId = "moda" }) => {
       active: TTIconActive,
     },
   }
+
+  const projectColorMap = {
+    moda: "#000000",
+    chaing: "#3B82F6",
+    tooning: "#FF6699",
+  }
+
+  const currentColor = projectColorMap[activeProject] || "#000000"
 
   return (
     <div className="project-detail-page">
@@ -74,12 +75,12 @@ const ProjectDetail = ({ currentProjectId = "moda" }) => {
         </div>
 
         {/* 기술 스택 태그 */}
-        <ProjectSkillTags tags={currentProject.tags} color={currentProject.id === "moda" ? "#000000" : currentProject.id === "chaing" ? "#3B82F6" : "#FF6699"} />
+        <ProjectSkillTags tags={currentProject.tags} color={currentColor} />
 
         {/* 설명 */}
         <p className="description">{currentProject.description}</p>
 
-        {/* 정보 */}
+        {/* 프로젝트 정보 */}
         <div className="project-info">
           <div className="info-row">
             <span className="info-label">개발 기간</span>
