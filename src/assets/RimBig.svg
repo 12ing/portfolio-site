@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 931.05 651.23">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 580.83px;
+      }
+
+      .cls-2 {
+        fill: #f5fcff;
+        font-family: Caveat-Bold, Caveat;
+        font-weight: 700;
+        stroke: #f5fcff;
+        stroke-miterlimit: 10;
+        stroke-width: 10px;
+      }
+
+      .cls-3 {
+        font-size: 168.88px;
+      }
+    </style>
+  </defs>
+  <text class="cls-2" transform="translate(5 472.56)"><tspan class="cls-1" x="0" y="0">Rim</tspan><tspan class="cls-3" x="760.29" y="0"> </tspan><tspan class="cls-1" x="801.16" y="0">.</tspan></text>
+</svg>

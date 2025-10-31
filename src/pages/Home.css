@@ -175,23 +175,19 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 1400px;
-  margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 .contact-title {
   font-size: var(--font-size-h1);
-  /* font-size: clamp(60px, 10vw, 140px); */
   font-weight: var(--font-weight-h1);
   color: var(--color-gray-dark);
   text-align: center;
-  width: 100vw; /* 화면 전체 너비 */
+  width: 100vw;
   max-width: none;
   margin: 0;
-  white-space: nowrap; /* 한 줄로 강제 */
+  white-space: nowrap;
   overflow: visible;
-  /* line-height: 1.1; */
-  /* letter-spacing: -2px; */
 }
 
 .contact-button-wrapper {
@@ -199,6 +195,24 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: 50px;
+}
+
+.contact-rim-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 500px;
+  opacity: 0;
+  /* transition: opacity 0.6s ease; */
+  z-index: 1;
+}
+
+.contact-section:has(.contact-button-wrapper:hover) .contact-title {
+  opacity: 0;
+}
+.contact-section:has(.contact-button-wrapper:hover) .contact-rim-image {
+  opacity: 1;
 }
 
 @keyframes bounce {

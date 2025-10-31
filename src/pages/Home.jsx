@@ -4,6 +4,7 @@ import Rogo1 from "../assets/Rogo1.svg"
 import ArrowDown from "../assets/arrowDown.svg"
 import InteractiveButton from "../components/button"
 import ProjectCard from "../components/ProjectCard"
+import RimBig from "../assets/RimBig.svg"
 
 import HomeData from "../data/projects.json"
 
@@ -104,28 +105,16 @@ function Home() {
 
       {/* Contact 화면 */}
       <div className="contact-section">
-        {/* <div className="contact-header-container">
-          <div className="contact-header">
-            <span className="contact-from">from</span>
-            <span className="contact-insight">Insight</span>
-          </div>
-
-          <div className="contact-divider"></div>
-
-          <div className="contact-header">
-            <span className="contact-to">to</span>
-            <sapn className="contact-action">Action</sapn>
-          </div>
-        </div> */}
-
         <div className="contact-main">
           <h2 className="contact-title">The Choice is Already</h2>
+          <img src={RimBig} alt="Rim" className="contact-rim-image" />
         </div>
 
         <div className="contact-button-wrapper">
-          <InteractiveButton targetId="contact-section">Contact</InteractiveButton>
+          <InteractiveButton targetId="contact-section" className="contact-hover-trigger">
+            Contact
+          </InteractiveButton>
         </div>
-
         {/* <div className="contact-arrow-up">↑</div> */}
       </div>
     </div>
