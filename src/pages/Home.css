@@ -34,10 +34,10 @@
 .arrowDown {
   height: 120px;
   position: absolute;
-  bottom: 50px;
+  bottom: 80px;
   left: 50%;
   transform: translateX(-50%);
-  animation: bounce 1.5s infinite ease-in-out;
+  animation: bounce 1.2s infinite ease-in-out;
 }
 
 /* ========================================================================= */
@@ -60,7 +60,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  margin-bottom: 50px;
 }
 
 .aboutMe-content p {
@@ -70,7 +70,51 @@
   font-weight: var(--font-weight-body1);
   text-align: center;
   margin: 0;
+
   line-height: 1.8;
+}
+
+.contact-header-container {
+  top: 80px;
+  left: 0;
+  right: 0;
+  padding: 60px 100px;
+  justify-content: center;
+  display: flex;
+  gap: 40px;
+  width: 80%;
+  margin-bottom: 150px;
+}
+
+.contact-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-from,
+.contact-to {
+  font-size: var(--font-size-caption2);
+  font-weight: var(--font-weight-caption2);
+  color: var(--color-primary);
+  letter-spacing: 1px;
+}
+
+.contact-insight,
+.contact-action {
+  font-family: var(--font-family-logo);
+  font-size: var(--font-size-logo3);
+  font-weight: var(--font-weight-logo);
+  color: var(--color-primary);
+  margin: 0;
+}
+
+.contact-divider {
+  flex: 1;
+  height: 1px;
+  background-color: var(--color-primary);
+  margin: 0 60px;
+  align-self: center;
+  margin-top: 40px;
 }
 
 .aboutMe-button-wrapper {
@@ -120,49 +164,6 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-}
-
-.contact-header-container {
-  position: absolute;
-  top: 80px;
-  left: 0;
-  right: 0;
-  padding: 60px 100px;
-  display: flex;
-  /* justify-content: space-between; */
-  /* align-items: flex-start; */
-  /* z-index: 1; */
-}
-
-.contact-header {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-from,
-.contact-to {
-  font-size: var(--font-size-caption2);
-  font-weight: var(--font-weight-caption2);
-  color: var(--color-gray-light);
-  letter-spacing: 1px;
-}
-
-.contact-insight,
-.contact-action {
-  font-family: var(--font-family-logo);
-  font-size: var(--font-size-logo2);
-  font-weight: var(--font-weight-logo);
-  color: var(--color-background);
-  margin: 0;
-}
-
-.contact-divider {
-  flex: 1;
-  height: 1px;
-  background-color: var(--color-background);
-  margin: 0 60px;
-  align-self: center;
-  margin-top: 40px;
 }
 
 /* 메인 콘텐츠 */

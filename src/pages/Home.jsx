@@ -58,6 +58,21 @@ function Home() {
             <p key={index}>{paragraph}</p>
           ))}
         </div>
+
+        <div className="contact-header-container">
+          <div className="contact-header">
+            <span className="contact-from">from</span>
+            <span className="contact-insight">Insight</span>
+          </div>
+
+          <div className="contact-divider"></div>
+
+          <div className="contact-header">
+            <span className="contact-to">to</span>
+            <span className="contact-action">Action</span>
+          </div>
+        </div>
+
         <div className="aboutMe-button-wrapper">
           <InteractiveButton targetId="aboutMe-section">
             About
@@ -89,7 +104,7 @@ function Home() {
 
       {/* Contact 화면 */}
       <div className="contact-section">
-        <div className="contact-header-container">
+        {/* <div className="contact-header-container">
           <div className="contact-header">
             <span className="contact-from">from</span>
             <span className="contact-insight">Insight</span>
@@ -101,7 +116,7 @@ function Home() {
             <span className="contact-to">to</span>
             <sapn className="contact-action">Action</sapn>
           </div>
-        </div>
+        </div> */}
 
         <div className="contact-main">
           <h2 className="contact-title">The Choice is Already</h2>
