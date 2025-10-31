@@ -2,15 +2,19 @@ import React, { useState, useEffect } from "react"
 import { Routes, Route, Navigate } from "react-router-dom"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
+import useScrollToTop from "./hooks/useScrollToTop"
 
 import Home from "./pages/Home"
 import AboutMe from "./pages/aboutMe"
 import Projects from "./pages/Projects"
 import Contact from "./pages/Contact"
+import "./App.css"
 
 const SCROLL_THRESHOLD = 50
 
 function App() {
+  useScrollToTop()
+
   const [showHeader, setShowHeader] = useState(true)
   const [lastScrollY, setLastScrollY] = useState(0)
 

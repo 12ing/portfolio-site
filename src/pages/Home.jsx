@@ -14,21 +14,17 @@ function Home() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (projectsWrapperRef.current && projectsSectionRef.current) {
-        const wrapper = projectsWrapperRef.current
-        const section = projectsSectionRef.current
-        const wrapperRect = wrapper.getBoundingClientRect()
+      const wrapper = projectsWrapperRef.current
+      const section = projectsSectionRef.current
+      if (!wrapper || !section) return
 
-        if (wrapperRect.top <= 0 && wrapperRect.bottom >= window.innerHeight) {
-          // 스크롤 진행도 계산
-          const scrollProgress = Math.abs(wrapperRect.top) / (wrapper.offsetHeight - window.innerHeight)
+      const wrapperRect = wrapper.getBoundingClientRect()
 
-          // 가로 스크롤 거리 계산
-          const maxScroll = section.scrollWidth - section.offsetWidth
-          const scrollAmount = scrollProgress * maxScroll
-
-          section.scrollLeft = scrollAmount
-        }
+      if (wrapperRect.top <= 0 && wrapperRect.bottom >= window.innerHeight) {
+        // 세로 스크롤 → 가로 스크롤로 변환
+        const scrollProgress = Math.abs(wrapperRect.top) / (wrapper.offsetHeight - window.innerHeight)
+        const maxScroll = section.scrollWidth - section.offsetWidth
+        section.scrollLeft = scrollProgress * maxScroll
       }
     }
 
@@ -38,22 +34,21 @@ function Home() {
 
   return (
     <div className="page-container">
-      {/* Hero 화면 */}
-      <div className="hero-section">
+      {/* Hero 섹션 */}
+      <section className="hero-section">
         <h1>
           I'm ready.
           <br />
           <span>
-            Already
-            <span className="space">&nbsp;</span>
+            Already&nbsp;
             <img src={Rogo1} alt="Rim" className="Rogo1" />
           </span>
         </h1>
         <img src={ArrowDown} alt="ArrowDown" className="arrowDown" />
-      </div>
+      </section>
 
-      {/* About me 화면 */}
-      <div className="aboutMe-section">
+      {/* About Me 섹션 */}
+      <section className="aboutMe-section">
         <div className="aboutMe-content">
           {HomeData.HomeAboutMe.map((paragraph, index) => (
             <p key={index}>{paragraph}</p>
@@ -81,10 +76,10 @@ function Home() {
             me
           </InteractiveButton>
         </div>
-      </div>
+      </section>
 
-      {/* projects 화면 */}
-      <div className="projects-wrapper" ref={projectsWrapperRef} style={{ height: `${HomeData.HomeProjectList.length * 160}vh` }}>
+      {/* Projects 섹션 */}
+      <section className="projects-wrapper" ref={projectsWrapperRef} style={{ height: `${HomeData.HomeProjectList.length * 160}vh` }}>
         <div className="projects-sticky">
           <div className="projects-section" ref={projectsSectionRef}>
             {HomeData.HomeProjectList.map((project, index) => (
@@ -102,22 +97,19 @@ function Home() {
             ))}
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* Contact 화면 */}
-      <div className="contact-section">
+      {/* Contact 섹션 */}
+      <section className="contact-section">
         <div className="contact-main">
           <h2 className="contact-title">The Choice is Already</h2>
           <img src={RimBig} alt="Rim" className="contact-rim-image" />
         </div>
 
         <div className="contact-button-wrapper">
-          <InteractiveButton targetId="contact" className="contact-hover-trigger">
-            Contact
-          </InteractiveButton>
+          <InteractiveButton targetId="contact">Contact</InteractiveButton>
         </div>
-        {/* <div className="contact-arrow-up">↑</div> */}
-      </div>
+      </section>
     </div>
   )
 }
