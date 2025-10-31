@@ -1,5 +1,5 @@
 import React from "react"
-import "./aboutMe.css"
+import "./AboutMe.css"
 import Rogo1 from "../assets/rogo1.svg"
 import Picture from "../assets/picture.svg"
 import AboutMeContent from "../components/AboutMeContent"
