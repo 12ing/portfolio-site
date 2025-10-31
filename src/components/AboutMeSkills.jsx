@@ -16,7 +16,7 @@ import JSIcon from "../assets/skillsIcons/JSIcon.svg"
 import LottieIcon from "../assets/skillsIcons/lottieIcon.svg"
 import MysqlIcon from "../assets/skillsIcons/mysqlIcon.svg"
 import NotionIcon from "../assets/skillsIcons/notionIcon.svg"
-import PsIcon from "../assets/skillsIcons/psIcon.svg"
+import PsIcon from "../assets/skillsIcons/PsIcon.svg"
 import ReactIcon from "../assets/skillsIcons/reactIcon.svg"
 
 function AboutMeSkills() {
