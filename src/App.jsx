@@ -5,7 +5,7 @@ import Footer from "./components/Footer"
 import useScrollToTop from "./hooks/useScrollToTop"
 
 import Home from "./pages/Home"
-import AboutMe from "./pages/aboutMe"
+import AboutMe from "./pages/AboutMe"
 import Projects from "./pages/Projects"
 import Contact from "./pages/Contact"
 import "./App.css"
