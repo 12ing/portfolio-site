@@ -4,9 +4,6 @@ import ProjectDetail from "../components/ProjectDetail"
 import { motion, AnimatePresence } from "framer-motion"
 import { useParams } from "react-router-dom"
 
-// ============================
-// 이미지 import
-// ============================
 import moda1 from "../assets/projects/moda1.png"
 import moda2 from "../assets/projects/moda2.png"
 import moda3 from "../assets/projects/moda3.png"
@@ -21,26 +18,20 @@ import TT2 from "../assets/projects/TT2.png"
 import TT3 from "../assets/projects/TT3.png"
 
 function Projects() {
-  // ✅ URL에서 projectId 받아오기
   const { projectId } = useParams()
 
-  // ✅ 초기값을 projectId로 설정 (없으면 moda)
   const [activeProject, setActiveProject] = useState(projectId || "moda")
   const [selectedImage, setSelectedImage] = useState(null)
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isDragging, setIsDragging] = useState(false)
   const startXRef = useRef(0)
 
-  // ✅ URL이 바뀔 때마다 activeProject 동기화
   useEffect(() => {
     if (projectId) {
       setActiveProject(projectId)
     }
   }, [projectId])
 
-  // ============================
-  // 프로젝트별 이미지 데이터
-  // ============================
   const projectImages = {
     moda: [moda1, moda2, moda3],
     chaing: [chainG1, chainG2, chainG3, chainG4],
@@ -49,15 +40,9 @@ function Projects() {
 
   const total = projectImages[activeProject]?.length || 0
 
-  // ============================
-  // 이미지 슬라이드 이동
-  // ============================
   const handleNext = () => setCurrentIndex((prev) => (prev + 1) % total)
   const handlePrev = () => setCurrentIndex((prev) => (prev - 1 + total) % total)
 
-  // ============================
-  // 키보드 이벤트 (좌우/ESC)
-  // ============================
   const handleKeyDown = useCallback(
     (e) => {
       if (e.key === "Escape") setSelectedImage(null)
@@ -72,9 +57,6 @@ function Projects() {
     return () => window.removeEventListener("keydown", handleKeyDown)
   }, [handleKeyDown])
 
-  // ============================
-  // 마우스 드래그로 이미지 전환
-  // ============================
   const handleMouseDown = (e) => {
     setIsDragging(true)
     startXRef.current = e.clientX
@@ -95,33 +77,23 @@ function Projects() {
   const handleMouseUp = () => setIsDragging(false)
   const handleMouseLeave = () => setIsDragging(false)
 
-  // ============================
-  // 모달 열기 / 닫기
-  // ============================
   const openModal = (index) => {
     setCurrentIndex(index)
     setSelectedImage(projectImages[activeProject][index])
   }
 
   const closeModal = () => setSelectedImage(null)
-
-  // ============================
-  // 렌더링
-  // ============================
   return (
     <div className="page-container">
       <div className="projects-container">
-        {/* ✅ 선택된 프로젝트 정보 */}
         <ProjectDetail currentProjectId={activeProject} setActiveProject={setActiveProject} />
 
-        {/* ✅ 이미지 리스트 */}
         <div className="project-images">
           {projectImages[activeProject]?.map((img, idx) => (
             <img key={idx} src={img} alt={`${activeProject}-img-${idx}`} className="project-image" onClick={() => openModal(idx)} />
           ))}
         </div>
 
-        {/* ✅ 이미지 모달 */}
         <AnimatePresence>
           {selectedImage && (
             <motion.div

@@ -108,9 +108,10 @@
   color: var(--color-gray-light);
   margin: 0;
   line-height: 1.6;
+  white-space: pre-line;
 }
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .aboutme-values-full-line {
     left: 50%;
     transform: translateX(-50%);
@@ -166,4 +167,4 @@
   .aboutme-values-title {
     font-size: clamp(28px, 6vw, 48px);
   }
-}
+} */

@@ -225,7 +225,7 @@
   }
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   #aboutMe-section {
     padding: 40px 20px;
   }
@@ -238,7 +238,6 @@
     bottom: 60px;
   }
 
-  /* 모바일에서는 세로 스크롤 */
   .projects-wrapper {
     height: auto !important;
   }
@@ -252,4 +251,4 @@
     flex-direction: column;
     height: auto;
   }
-}
+} */
