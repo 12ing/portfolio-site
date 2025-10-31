@@ -1,0 +1,27 @@
+.skill-tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.skill-tag {
+  padding: 8px 16px;
+  border: 1px solid #000;
+  border-radius: 9999px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* 프론트엔드 스택 (기본적으로 컬러 배경, 흰 글씨) */
+.skill-tag.frontend {
+  background-color: var(--color, #000);
+  color: #fff;
+}
+
+/* 백엔드 스택 (기본적으로 흰 배경, 테두리 컬러) */
+.skill-tag.backend {
+  background-color: #fff;
+}
