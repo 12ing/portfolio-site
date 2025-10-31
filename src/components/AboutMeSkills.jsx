@@ -2,7 +2,7 @@ import React from "react"
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
-import "./aboutMeSkills.css"
+import "./AboutMeSkills.css"
 
 // 아이콘 import (실제 경로에 맞게 수정하세요)
 import AeIcon from "../assets/skillsIcons/AeIcon.svg"

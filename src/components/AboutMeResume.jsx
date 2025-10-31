@@ -1,5 +1,5 @@
 import React from "react"
-import "./aboutMeResume.css"
+import "./AboutMeResume.css"
 import resumeData from "../data/projects.json"
 
 function AboutMeResume() {
