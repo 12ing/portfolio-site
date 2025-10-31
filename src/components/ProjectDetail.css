@@ -1,0 +1,188 @@
+.project-detail-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+/* 메인 컨텐츠 */
+.main-content {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 100px;
+  box-sizing: border-box;
+}
+
+/* 👑 뱃지 */
+.badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--font-weight-caption1);
+  font-size: var(--font-size-caption1);
+  margin-bottom: 20px;
+}
+
+/* 회색 서브타이틀 */
+.subtitle {
+  font-size: var(--font-size-body2);
+  font-weight: var(--font-weight-body2);
+  color: #6b7280;
+  margin-bottom: 32px;
+  line-height: 26px;
+}
+
+/* 로고 */
+.project-logo {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-logo img {
+  height: 120px;
+}
+
+/* 기술 스택 */
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.tag {
+  padding: 8px 20px;
+  border: 1px solid #000;
+  border-radius: 9999px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* 설명 */
+.description {
+  color: var(--color-gray-dark);
+  font-size: var(--font-size-body1);
+  font-weight: var(--font-weight-caption1);
+  line-height: 1.5;
+  /* white-space: pre-line; */
+  margin-bottom: 80px;
+  margin-top: 0;
+  padding: 0;
+}
+
+/* 프로젝트 정보 */
+.project-info {
+  position: absolute;
+  left: 100px;
+  bottom: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--color-gray);
+  font-size: var(--font-size-caption2);
+  font-weight: var(--font-weight-caption2);
+  line-height: 26px;
+  text-align: left;
+  justify-content: flex-start;
+  align-self: flex-start;
+}
+
+.info-row {
+  display: flex;
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+.info-label {
+  font-weight: var(--font-weight-subtitle);
+  min-width: 80px;
+  font-size: var(--font-size-caption2);
+  color: var(--color-gray-dark);
+}
+
+.info-value {
+  flex: 1;
+}
+
+/* 하단 버튼 */
+.project-icons-nav {
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+  display: flex;
+  gap: 20px;
+}
+
+.project-icon-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-icon-button img {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s ease;
+}
+
+/* 애니메이션 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 반응형 (태블릿 이하) */
+/* @media (max-width: 768px) {
+  .main-content {
+    padding: 100px 20px 40px;
+  }
+
+  .project-logo img {
+    width: 200px;
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 28px;
+    max-width: 90%;
+  }
+
+  .project-info {
+    font-size: 14px;
+  }
+
+  .project-icons-nav {
+    bottom: 20px;
+    right: 20px;
+    gap: 12px;
+  }
+
+  .project-icon-button img {
+    width: 44px;
+    height: 44px;
+  }
+} */
