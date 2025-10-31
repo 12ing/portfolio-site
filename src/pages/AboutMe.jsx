@@ -1,6 +1,6 @@
 import React from "react"
 import "./AboutMe.css"
-import Rogo1 from "../assets/rogo1.svg"
+import Rogo1 from "../assets/Rogo1.svg"
 import Picture from "../assets/picture.svg"
 import AboutMeContent from "../components/AboutMeContent"
 import AboutMeValues from "../components/AboutMeValues"
