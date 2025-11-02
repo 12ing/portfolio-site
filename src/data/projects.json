@@ -5,7 +5,7 @@
       "id": 1,
       "number": "01",
       "title": "다양한 정보를 '발견'하는 경험",
-      "description": "기존의 서비스들은 그저 정보를 저장하고, 분류하는데 그쳤다면, \n '모다'는 사용자가 저장한 정보를 다시 발견할 수 있도록 \n 커머스 UX 관점에서 재설계한 프로젝트입니다.",
+      "description": "기존의 서비스들은 그저 정보를 저장하고 분류하는데 그쳤다면, \n '모다'는 사용자가 저장한 정보를 다시 발견할 수 있도록 \n 커머스 UX 관점에서 재설계한 프로젝트입니다.",
       "color": "#4169E1",
       "imageUrl": "url_for_project_1_image",
       "projectId": "moda"
@@ -14,7 +14,7 @@
       "id": 2,
       "number": "02",
       "title": "계약서보단 가벼운 서약서로",
-      "description": "친한사람들과 돈 때문에 불편해지지않도록, \n 블록체인 기술을 활용하여 투명하고 안전하게 \n 동거생활을 할 수 있도록 도와주는 코리빙 서비스입니다.",
+      "description": "친한 사람들과 돈 때문에 불편해지지 않도록, \n 블록체인 기술을 활용하여 투명하고 안전하게 \n 동거 생활을 할 수 있도록 도와주는 코리빙 서비스입니다.",
       "color": "#28a745",
       "imageUrl": "url_for_project_2_image",
       "projectId": "chaing"
@@ -23,7 +23,7 @@
       "id": 3,
       "number": "03",
       "title": "실시간 협업 웹툰 제작 서비스",
-      "description": "기존에 서비스 되고 있는 'Tooning Editor'에 \n 학생들이 함께 웹툰을 제작할 수 있도록 \n 실시간 협업기능을 추가한 프로젝트입니다.",
+      "description": "기존에 서비스 되고 있는 'Tooning Editor'에 \n 학생들이 함께 웹툰을 제작할 수 있도록 \n 실시간 협업 기능을 추가한 프로젝트입니다.",
       "color": "#ffc107",
       "imageUrl": "url_for_project_3_image",
       "projectId": "tooning"
@@ -60,7 +60,7 @@
       "id": 3,
       "title": "Repeat",
       "tag": "and",
-      "subtitle": "여러번의 반복을 통해 개선합니다.",
+      "subtitle": "여러 번의 반복을 통해 개선합니다.",
       "description": "완벽보다 성장을 추구하며, 프로젝트마다 회고를 진행하며 \n 개선점을 찾아 기록합니다. 실패를 두려워하기보다, \n 빠르게 학습하고 수정을 통해 더 나은 결과를 만듭니다."
     }
   ],
@@ -184,7 +184,7 @@
       "title": "TOONING TOGETHER",
       "englishTitle": "TooningTogether",
       "tags": ["Angular", "Ionic Framework", "Node.js", "GraphQL", "Yjs"],
-      "description": "초등학생이 함께 웹툰을 제작할 수 있도록\n실시간 협업기능을 제공하는 서비스",
+      "description": "초등학생이 함께 웹툰을 제작할 수 있도록\n실시간 협업 기능을 제공하는 서비스",
       "period": "2025. 04 - 2025. 05 (6주)",
       "team": "Frontend 3명, Fullstack 3명 (총 6명)",
       "role": "Frontend, UI/UX 디자인, 기획, PPT/영상/배너제작",
