@@ -25,7 +25,7 @@ function AboutMe() {
             <br />
             <span className="greeting">
               <span className="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-              만나서 반갑습니다 프론트엔드개발자 이미림입니다.
+              만나서 반갑습니다. 프론트엔드 개발자 이미림입니다.
             </span>
           </span>
         </p>
@@ -34,16 +34,13 @@ function AboutMe() {
 
       {/* Problem 화면 */}
       <div className="aboutme-problem-page">
-        {/* "philosophy" ID로 AboutMeContent 데이터 사용 */}
         <AboutMeContent sectionId="problem" />
       </div>
 
       {/* Values 화면 */}
       <div className="aboutme-values-wrapper">
-        {/* 1. 먼저 긴 선 그리기 */}
         <div className="aboutme-values-full-line"></div>
 
-        {/* 2. 컴포넌트들을 선 위에 올리기 */}
         {AboutMeData.AboutMeValues.map((value) => (
           <AboutMeValues key={value.id} valueId={value.id} />
         ))}
@@ -51,7 +48,6 @@ function AboutMe() {
 
       {/* Sloution 화면 */}
       <div className="aboutme-problem-page">
-        {/* "philosophy" ID로 AboutMeContent 데이터 사용 */}
         <AboutMeContent sectionId="solution" />
       </div>
 

@@ -11,7 +11,7 @@ function Footer() {
       <div className="footer-content">
         <div className="footer-logo-section">
           <img src={Rogo4White} alt="Rim Rogo" className="Rogo4White" />
-          <p className="footer-tagline">피드백은 언제나 환영입니다</p>
+          <p className="footer-tagline">피드백은 언제나 환영입니다.</p>
         </div>
 
         <div className="footer-icons">

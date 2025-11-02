@@ -1,5 +1,5 @@
 {
-  "HomeAboutMe": ["작은 문제라도 관찰하고 분석하며,", "이를 통해 발견한 인사이트를 바탕으로 주도적으로 행동합니다"],
+  "HomeAboutMe": ["작은 문제라도 관찰하고 분석하며,", "이를 통해 발견한 인사이트를 바탕으로 주도적으로 행동합니다."],
   "HomeProjectList": [
     {
       "id": 1,
@@ -67,7 +67,7 @@
   "awards": [
     {
       "year": 2025,
-      "name": "SSAFY 전시발표회 전시부문 3등"
+      "name": "SSAFY 전시발표회 전시부문 (3등)"
     },
     {
       "year": 2025,
@@ -123,7 +123,7 @@
     },
     {
       "year": "2020",
-      "name": "뷰티디자인 졸업준비위원회"
+      "name": "뷰티디자인 전공 졸업준비위원회"
     }
   ],
   "experience": [
@@ -143,7 +143,7 @@
   "education": [
     {
       "period": "2019 - 2022",
-      "school": "건국대학교 글로컬 뷰티디자인 & 영상디자인 전공"
+      "school": "건국대학교 글로컬 영상디자인 & 뷰티디자인 전공"
     },
     {
       "period": "2016 - 2019",
@@ -158,10 +158,10 @@
       "title": "모다",
       "englishTitle": "MODA",
       "tags": ["Kotlin", "SpringBoot", "FastAPI", "JPA"],
-      "description": "사용자가 저장한 정보를 다시 발견할 수 있도록\n UX 구조 재설계 프로젝트",
-      "period": "2025.01 - 2025.02 (6주)",
+      "description": "사용자가 저장한 정보를 다시 발견할 수 있도록,\n UX 구조 재설계 프로젝트",
+      "period": "2025. 01 - 2025. 02 (6주)",
       "team": "Frontend 2명, Backend 3명, Fullstack 1명 (총 6명)",
-      "role": "Frontend, UI/UX 디자인, 기획, PPT / 영상제작",
+      "role": "Frontend, UI/UX 디자인, 기획, PPT/영상제작",
       "relatedProjects": ["chaing", "tooning"]
     },
     {
@@ -171,10 +171,10 @@
       "title": "Chain G",
       "englishTitle": "ChainG",
       "tags": ["React", "Redux", "TypeScript", "Next.js", "SpringBoot", "FastAPI", "JPA"],
-      "description": "친한 사람들과 돈 문제로 불편해지지 않도록,\n 가볍지만 신리할 수 있는 코리빙 서비스",
-      "period": "2025.02 - 2025.04 (6주)",
+      "description": "친한 사람들과 돈 문제로 불편해지지 않도록,\n 가볍지만 신뢰할 수 있는 코리빙 서비스",
+      "period": "2025. 02 - 2025. 04 (6주)",
       "team": "Frontend 3명, Backend 3명 (총 6명)",
-      "role": "Frontend, UI/UX 디자인, 기획, PPT / 영상제작",
+      "role": "Frontend, UI/UX 디자인, 기획, PPT/영상제작",
       "relatedProjects": ["moda", "tooning"]
     },
     {
@@ -185,9 +185,9 @@
       "englishTitle": "TooningTogether",
       "tags": ["Angular", "Ionic Framework", "Node.js", "GraphQL", "Yjs"],
       "description": "초등학생이 함께 웹툰을 제작할 수 있도록\n실시간 협업기능을 제공하는 서비스",
-      "period": "2025.04 - 2025.05 (6주)",
+      "period": "2025. 04 - 2025. 05 (6주)",
       "team": "Frontend 3명, Fullstack 3명 (총 6명)",
-      "role": "Frontend, UI/UX 디자인, 기획, PPT / 영상 / 배너제작",
+      "role": "Frontend, UI/UX 디자인, 기획, PPT/영상/배너제작",
       "relatedProjects": ["moda", "chaing"]
     }
   ]
